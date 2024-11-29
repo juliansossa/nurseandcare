@@ -121,7 +121,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    top: 70px; /* Mover el botón un poco más abajo */
+    top: 80px; /* Mover el botón un poco más abajo */
     right: 20px; /* Alineamos al lado derecho */
     z-index: 3;
 }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse and care</title>
+    <link rel="icon" href="images/logoNurse.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MiLogo</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <div class="menu-dropdown" id="menu-dropdown">
+        <!-- Botón de cerrar dentro del menú desplegable -->
+        <button class="close-menu" id="close-menu">Cerrar</button>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+
+    <div id="inicio" class="cover">
+        <img src="images/enfermeraPortada.jpg" alt="Portada de una enfermera" class="cover__image">
+        <div class="cover__overlay">
+            <h1 class="cover__title">ENFERMERIA A DOMICILIO </h1>
+            <p class="cover__description">Ofrecemos una amplia gama de servicios de enfermería y cuidado a domicilio.
+            </p>
+            <a
+                href="https://wa.me/573142701372?text=Hola%20SY%20Nurse%20And%20Care,%20me%20interesa%20un%20servicio%20de">
+                <button class="cover__button">Whatsapp</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sección Info Footer -->
+    <section class="info-footer">
+        <div class="box">
+            <img src="images/image247.png" alt="Icono 1" class="box-icon">
+            <h5 class="box-title">Disponibilidad 24/7</h5>
+        </div>
+        <div class="box">
+            <img src="images/imageGarantia.png" alt="Icono 2" class="box-icon">
+            <h5 class="box-title">Garantía y seguridad</h5>
+        </div>
+        <div class="box">
+            <img src="images/imageCualificado.png" alt="Icono 3" class="box-icon">
+            <h5 class="box-title">Profesionales cualificados</h5>
+        </div>
+    </section>
+
+    <!-- cards-->
+
+    <h2 id="servicios" class="card-title">Servicios</h2>
+    <section class="card-container">
+        <a
+            href="https://wa.me/573142701372?text=Hola%2C%20necesito%20un%20servicio%20de%20terapia%20f%C3%ADsica%20y%20rehabilitaci%C3%B3n">
+            <div class="card">
+                <img src="images/terapiaFisica.jpg" alt="" srcset="">
+                <div class="card-content">
+                    <h3>Terapia física, respiratoria y rehabilitación</h3>
+                </div>
+            </div>
+        </a>
+        <div class="card">
+            <img src="images/asisAlimentacion.jpg" alt="" srcset="">
+            <div class="card-content">
+                <h3>Asistencia en la alimentación </h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/tomaSignos.jpeg" alt="" srcset="">
+            <div class="card-content">
+                <h3>Toma y valoración de signos vitales</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/adminMedicamentos.jpg" alt="" srcset="">
+            <div class="card-content">
+                <h3>Administración de medicamentos a domicilio</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/alimentacionSonda.jpg" alt="" srcset="">
+            <div class="card-content">
+                <h3>Manejo de sondas, vesical, nasogástrica y
+                    gastrostomía</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/acompañamiento.jpg" alt="" srcset="">
+            <div class="card-content">
+                <h3>Acompañamiento a citas medicas y
+                    procedimientos</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/aseoPersonal.jpg" alt="" srcset="">
+            <div class="card-content">
+                <h3>Asistencia al paciente en actividades de
+                    aseo y cuidado personal</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <form action="https://formsubmit.co/cuentasala2020@gmail.com" method="POST">
+            <h2>Contacto</h2>
+
+            <div class="input-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre">
+
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Teléfono">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico">
+
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5"
+                    placeholder="Deja tu mensaje explicando tu necesidad"></textarea>
+
+                <div class="form-txt">
+                    <a href="#">Policitica de privacidad</a>
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+
+                <input class="btn" type="submit" value="Enviar">
+            </div>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/site/index.html">
+            <input type="hidden" name="_captcha" value="false">
+
+        </form>
+    </section>
+
+    <div class="whatsapp-container">
+        <a href="https://wa.me/573142701372?text=Hola%20SY%20Nurse%20And%20Care,%20me%20interesa%20un%20servicio%20de"
+            target="_blank" rel="noopener noreferrer" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        <span class="whatsapp-tooltip">Contáctanos</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

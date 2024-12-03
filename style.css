@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
 * {
     vertical-align: baseline;
     font-weight: inherit;
@@ -9,11 +11,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
     padding: 0;
-    /* background-color: #fdf1f1; */
 }
 
 /* Navbar */
@@ -121,7 +124,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    top: 90px; /* Mover el botón un poco más abajo */
+    top: 80px; /* Mover el botón un poco más abajo */
     right: 20px; /* Alineamos al lado derecho */
     z-index: 3;
 }
@@ -151,6 +154,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: -1;
+    padding-top: 70px;
 }
 
 /* Imagen de fondo */
@@ -182,28 +186,13 @@ body {
 /* Estilos del texto y botón */
 .cover__title {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 .cover__description {
     font-size: 16px;
     margin-bottom: 20px;
-}
-
-.cover__button {
-    background-color: #33ff008c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.cover__button:hover {
-    background-color: #33ff00;
 }
 
 /* Diseño responsivo */
@@ -341,20 +330,157 @@ body {
 }
 
 /* Cards */
+/* Testimonio */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+.testimonio {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    padding-top: 80px;
+    position: relative;
+    background-image: url(https://media.istockphoto.com/id/2062608145/es/foto/a-female-nurse-caregiver-holds-hands-to-encourage-and-comfort-an-elderly-woman-for-care-and.jpg?s=1024x1024&w=is&k=20&c=dMewG4sC-_wV_4ImtKkds1xbQttNaaHY6IdraZPT2Vk=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.capa-black{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+
+.h1{
+    font-size: 30px;
+    position: relative;
+    color: white;
+}
+
+.parrafo1{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    color: #c6c6c6;
+    font-weight: 100;
+}
+
+.container-testimonials{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.testimonial{
+    width: 340px;
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 5px black;
+    
+}
+
+.photo-perfil1,
+.photo-perfil2,
+.photo-perfil3{
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    box-shadow: 0px 0px 30px -6px black;
+}
+
+.photo-perfil1{
+    background-image: url(images/fotoJaqueline.jpeg);
+    background-position: center -10px;
+}
+
+.photo-perfil2{
+    background-image: url(images/fotoValentina.jpeg);
+    background-size: 160px;
+    background-position: -20px 0px;
+}
+
+.photo-perfil3{
+    background-image: url(images/fotoPaul.jpeg);
+    background-size: 250px;
+    background-position: -78px -20px;
+}
+
+
+.testimonial h2{
+    margin-top: -40px;
+}
+
+.testimonial h4{
+    margin-top: 10px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.testimonial p{
+    margin-top: 10px;
+    font-weight: 100;
+    color: #7e7e7e;
+}
+
+.container-redes{
+    margin-top: 20px;
+}
+
+.container-redes label{
+    font-size: 40px;
+}
+
+.icon-facebook-with-circle{
+    color: #0148ba;
+}
+
+.icon-google-with-circle{
+    color: #aa1212;
+}
+
+.icon-twitter-with-circle{
+    color: #007bc7;
+}
+
+@media(max-width: 816px) {
+    .testimonial {
+        padding-top: 50px;
+    }
+}
+
+/* Testimonio */
 /* Contacto */
 
 .contacto {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #e96ca7;
 }
 
 form {
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
     text-align: center;
-    width: 40%;
 }
 
 .input-group {
@@ -437,6 +563,73 @@ textarea::placeholder {
 }
 
 /* Contacto */
+
+/* Info footer */
+
+.footer__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.384));
+}
+
+.footer__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__info img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.footer__info p {
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footer__info h3 {
+    color: #EA4492;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.footer__info p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer__info .instagram-logo {
+    padding-top: 10px;
+    width: 45px;
+}
+
+@media(max-width:850px) {
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__info {
+        align-self: center;
+        padding-bottom: 30px;
+        width: 80%;
+    }
+
+    .contacto {
+        width: 90%;
+        align-self: center;
+    }
+}
+
+/* Info footer */
 
 /* Boton whatsapp */
 

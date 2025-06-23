@@ -59,9 +59,13 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #eebbbb;
+    display: flex;
+    color: #333; /* Texto oscuro */
+    font-size: 18px;
+}
+
+.logo p {
+    margin: auto 10px;
 }
 
 .menu-toggle {
